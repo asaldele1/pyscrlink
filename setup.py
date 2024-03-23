@@ -20,7 +20,7 @@ setuptools.setup(
         ],
     python_requires='>=3.6',
     install_requires=[
-        'websockets',
+        'websockets>=10.0',
         'bluepy',
         'pyOpenSSL',
         'pybluez',
