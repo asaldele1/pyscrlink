@@ -23,6 +23,7 @@ setuptools.setup(
         'websockets',
         'bluepy',
         'pyOpenSSL',
+        'pybluez',
         ],
     entry_points={
         'console_scripts': [
@@ -30,4 +31,7 @@ setuptools.setup(
             'bluepy_helper_cap = pyscrlink.bluepy_helper_cap:setcap'
         ],
     },
+    dependency_links=[
+        'git+https://github.com/AcrossTheCloud/pybluez.git#egg=pybluez-0.30'
+        ]
 )
